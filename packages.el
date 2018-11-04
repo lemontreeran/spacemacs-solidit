@@ -60,12 +60,12 @@ Each entry is either:
       - A list beginning with the symbol `recipe' is a melpa
         recipe.  See: https://github.com/milkypostman/melpa#recipe-format")
 
-(defun fidding/init-company ()
+(defun spacemacs-solidity/init-company ()
   (use-package company
-    :ensure t
     :init
     :config
-    (add-hook 'after-init-hook 'global-company-mode)))
+    (add-hook 'after-init-hook 'global-company-mode))
+    )
 ;;激活自动补全))
 
 (defun spacemacs-solidity/init-solidity-mode ()
@@ -100,12 +100,12 @@ Each entry is either:
   ;; (push '(company-files company-sourcekit) company-backends-swift-mode)
   )
 
-;; (defun spacemacs-solidity/init-company-solidity ()
-;;   (use-package company-solidity
-;;     ;; :defer t
-;;     :ensure t
-;;     ;; :after (company)
-;;     ))
+(defun spacemacs-solidity/init-company-solidity ()
+  (use-package company-solidity
+    ;; :defer t
+    :ensure t
+    ;; :after (company)
+    ))
 
 ;; (defun spacemacs-solidity/post-init-company-solidity ()
 ;;   (spacemacs/add-company-solidity-hook 'solidity-mode))
