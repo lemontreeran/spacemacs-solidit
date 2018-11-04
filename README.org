@@ -26,6 +26,12 @@ brew install solidity
 brew linkapps solidity
 #+END_SRC
 
+** Install solium
+#+BEGIN_SRC shell
+npm install -g solium
+solium -V
+#+END_SRC
+
 * Key bindings
 
 | Key Binding | Description    |
