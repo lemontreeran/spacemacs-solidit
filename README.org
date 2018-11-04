@@ -17,6 +17,20 @@ This layer does wonderful things:
 To use this configuration layer, add it to your =~/.spacemacs=. You will need to
 add =spacemacs-solidity= to the existing =dotspacemacs-configuration-layers= list in this
 file.
+** Install solc
+#+BEGIN_SRC shell
+brew update
+brew upgrade
+brew tap ethereum/ethereum
+brew install solidity
+brew linkapps solidity
+#+END_SRC
+
+** Install solium
+#+BEGIN_SRC shell
+npm install -g solium
+solium -V
+#+END_SRC
 
 * Key bindings
 
