@@ -107,9 +107,6 @@ Each entry is either:
     ;; :after (company)
     ))
 
-;; (defun spacemacs-solidity/post-init-company-solidity ()
-;;   (spacemacs/add-company-solidity-hook 'solidity-mode))
-
 (defun spacemacs-solidity/post-init-flycheck ()
   (spacemacs/add-flycheck-hook 'solidity-mode))
 ;;; packages.el ends here
